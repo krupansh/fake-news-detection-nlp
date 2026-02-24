@@ -1,0 +1,9 @@
+venv/
+data/
+logs/
+*.csv
+/models
+*.keras
+*.h5
+assets/
+sample/
