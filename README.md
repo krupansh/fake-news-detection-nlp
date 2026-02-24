@@ -1,48 +1,56 @@
-Fake News Detection using NLP & Deep Learning
-Overview
+# Fake News Detection using NLP & Deep Learning
 
-This project implements an end-to-end NLP pipeline for fake news classification. It compares classical feature extraction techniques (TF-IDF, Word2Vec) with deep learning architectures (LSTM, GRU) and transformer-based approaches.
+## Overview
 
-The goal was to evaluate performance trade-offs between traditional machine learning models and sequence-based neural networks for text classification.
+This project implements an **end-to-end NLP pipeline** for fake news classification.  
+It compares **classical feature extraction techniques** (TF-IDF, Word2Vec) with **deep learning architectures** (LSTM, GRU) and transformer-based models.
 
-Tech Stack
+The objective was to evaluate **performance trade-offs** between traditional machine learning models and sequence-based neural networks for text classification.
 
-Python
 
-Pandas, NumPy
+## Tech Stack
 
-Scikit-learn
+- **Python**
+- **Pandas, NumPy**
+- **Scikit-learn**
+- **TensorFlow / Keras**
+- **Gensim (Word2Vec)**
+- **Streamlit** (interactive demo application)
 
-TensorFlow / Keras
 
-Gensim (Word2Vec)
+## Models Implemented
 
-Streamlit (for interactive demo)
+- **TF-IDF + Naive Bayes**
+- **Word2Vec + Classifier**
+- **LSTM**
+- **GRU**
+- **Transformer-based model**
 
-Models Implemented
 
-TF-IDF + Naive Bayes
+## Pipeline Workflow
 
-Word2Vec + Classifier
+1. Text preprocessing (cleaning, tokenization, normalization)
+2. Feature extraction (TF-IDF / Word2Vec embeddings)
+3. Model training & validation
+4. Performance evaluation using:
+   - Accuracy  
+   - Precision  
+   - Recall  
+   - F1-score  
+5. Deployment via Streamlit interface
 
-LSTM
 
-GRU
+## Project Structure
+##notebook/ → Model experimentation & training##
+##classifier.py → Model logic##
+##main.py → Execution script##
+##streamlit_app.py → Interactive UI##
+utils.py → Preprocessing helpers##
 
-Transformer-based model
 
-Project Structure
 
-notebook/ – model training & experimentation
+## Notes
 
-classifier.py – model logic
-
-main.py – execution script
-
-streamlit_app.py – interactive UI for predictions
-
-utils.py – preprocessing & helper functions
-
-Notes
-
-Trained model weights are not included in this repository due to size limitations. Models can be trained using the provided notebooks.
+- Trained model weights are excluded due to size limitations.
+- Models can be retrained using the provided notebooks.
+- Focus is on comparative evaluation of classical vs deep learning approaches.
